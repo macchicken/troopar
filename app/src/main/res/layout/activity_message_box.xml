@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:isScrollContainer="true"
+    tools:context="com.troopar.trooparapp.activity.MessageBoxActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/nearby_actionbar_bg"
+        android:theme="@style/MessageBoxTheme">
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/whiteColor"
+            android:singleLine="true"
+            android:textSize="20sp"/>
+        <ImageView
+            android:id="@+id/chat_people_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="end"
+            android:visibility="gone"
+            android:onClick="chatPeopleInfo"/>
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/appPageBackground"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/btn_voiceSend"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="0.001"
+                android:tint="@color/appMainColor"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ad0"
+                android:onClick="voiceSendAction"/>
+            <ImageView
+                android:id="@+id/btn_chatMessage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="0.001"
+                android:visibility="gone"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/chat_keyboard_icon"
+                android:onClick="chatMessageAction"/>
+            <EditText
+                android:id="@+id/et_sendmessage"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:layout_margin="5dp"
+                android:background="@drawable/edit_text_bottom_line_alone"
+                android:singleLine="true"
+                android:hint="Send Messages..."
+                android:textColorHint="@color/appTextColor"
+                android:textSize="15sp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/appTextColor" />
+            <TextView
+                android:id="@+id/recordBtn"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:layout_margin="5dp"
+                android:text="Hold to Talk"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textSize="15sp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/textview_border"
+                android:textColor="@color/appTextColor"/>
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="10dp"
+                android:text="Send"
+                android:visibility="gone"
+                android:onClick="sendMessage"
+                android:background="@color/appPageBackground"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/appTextColor"/>
+            <ImageView
+                android:id="@+id/btn_selectOther"
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="5dp"
+                android:onClick="selectOther"
+                android:visibility="visible"
+                android:tint="@color/appMainColor"
+                android:src="@drawable/tg"/>
+        </LinearLayout>
+        <GridLayout
+            android:id="@+id/chatOptionalFunctions"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="10dp"
+            android:alignmentMode="alignBounds"
+            android:columnOrderPreserved="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:orientation="horizontal"
+            android:animateLayoutChanges="true"
+            android:visibility="gone">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/bg_ring_trans_with_gradient">
+                <ImageView android:layout_margin="10dp" android:onClick="selectPhotos" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/bg_ring_trans_with_gradient" android:layout_marginStart="30dp">
+                <ImageView android:layout_margin="10dp" android:onClick="selectVideos" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <TextView android:text="Photos"
+                android:textSize="16sp"
+                android:textColor="@color/appTextColor" />
+            <TextView android:text="Video"
+                android:textSize="16sp"
+                android:textColor="@color/appTextColor"
+                android:layout_marginStart="30dp" />
+        </GridLayout>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rl_bottom"
+        android:layout_below="@id/my_toolbar"
+        android:id="@+id/incomeMessagesListView"
+        android:layout_marginLeft="10.0dp"
+        android:layout_marginRight="10.0dp"
+        android:layout_marginTop="10.0dp"
+        android:layout_marginBottom="10.0dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="5dp"
+        android:scrollbars="none"
+        android:choiceMode="singleChoice"
+        android:layout_centerInParent="true"/>
+
+
+</RelativeLayout>

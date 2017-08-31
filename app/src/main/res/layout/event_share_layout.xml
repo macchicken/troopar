@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:background="@null">
+            <TableRow
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="20dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/btn_troopar_share" android:background="@drawable/bg_oval_app_with_gradient" android:layout_column="1">
+                    <ImageView
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:src="@drawable/troopar_logo_white_t"
+                        android:layout_margin="10dp"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:visibility="gone" android:layout_marginStart="20dip" android:id="@+id/btn_weibo_share" android:background="@drawable/bg_oval_white_with_gradient" android:layout_column="1">
+                    <ImageView
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:src="@drawable/weibo_logo"
+                        android:layout_margin="10dp"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_column="1" android:layout_marginStart="20dip" android:visibility="gone" android:id="@+id/btn_tecentqq_share" android:background="@drawable/bg_oval_white_with_gradient">
+                    <ImageView
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:src="@drawable/tencent_qq"
+                        android:layout_margin="10dp"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_column="1" android:layout_marginStart="20dip" android:visibility="gone" android:id="@+id/btn_twitter_share" android:background="@drawable/bg_oval_white_with_gradient">
+                    <ImageView
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:src="@drawable/twitter_logo"
+                        android:layout_margin="10dp"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                </TableRow>
+            <TableRow
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="10dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Troopar"
+                    android:id="@+id/btn_troopar_share_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/whiteColor" />
+                <TextView
+                    android:text="Weibo"
+                    android:id="@+id/btn_weibo_share_text"
+                    android:layout_marginStart="20dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/whiteColor"
+                    android:visibility="gone"/>
+                <TextView
+                    android:layout_marginStart="20dip"
+                    android:text="QQ"
+                    android:id="@+id/btn_tecentqq_share_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/whiteColor"
+                    android:visibility="gone"/>
+                <TextView
+                    android:layout_marginStart="20dip"
+                    android:text="Twitter"
+                    android:id="@+id/btn_twitter_share_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/whiteColor"
+                    android:visibility="gone"/>
+            </TableRow>
+            <TableRow
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="20dip">
+                <RelativeLayout android:layout_column="1" android:visibility="gone" android:id="@+id/btn_instagram_share" android:background="@drawable/bg_oval_white_with_gradient">
+                    <ImageView
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:src="@drawable/instagram_logo"
+                        android:layout_margin="10dp"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_column="1" android:layout_marginStart="20dip" android:visibility="gone" android:id="@+id/btn_facebook_share" android:background="@drawable/bg_oval_white_with_gradient">
+                    <ImageView
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:src="@drawable/facebook_logo"
+                        android:layout_margin="10dp"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_column="1" android:layout_marginStart="20dip" android:id="@+id/btn_moreoptions_share" android:background="@drawable/bg_oval_white_with_gradient">
+                    <ImageView
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:src="@drawable/more_options_icon"
+                        android:layout_margin="10dp"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </TableRow>
+            <TableRow android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="10dip">
+                <TextView
+                    android:text="Instagram"
+                    android:id="@+id/btn_instagram_share_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/whiteColor"
+                    android:visibility="gone"/>
+                <TextView
+                    android:text="Facebook"
+                    android:layout_marginStart="20dip"
+                    android:id="@+id/btn_facebook_share_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/whiteColor"
+                    android:visibility="gone"/>
+            </TableRow>
+        </TableLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/appMainColor"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip">
+            <TextView
+                android:id="@+id/btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:textColor="@color/whiteColor"
+                android:text="Cancel"
+                android:layout_centerVertical="true"
+                android:textAlignment="center"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

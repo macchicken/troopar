@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whiteColor"
+    tools:context="com.troopar.trooparapp.activity.CreateGroupActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/nearby_actionbar_bg"
+        android:theme="@style/MessageBoxTheme">
+        <RelativeLayout android:id="@+id/toolbar_logo"
+            android:layout_width="110dp" android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/troopar_logo_white"
+            android:layout_gravity="center_vertical|center_horizontal">
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/selectPeopleBtn"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:text="OK"
+            android:textColor="@color/blackColor"
+            android:background="@drawable/buttonshape_thin_red"
+            android:layout_gravity="end"
+            android:gravity="center"
+            android:layout_marginEnd="5dip"
+            android:onClick="createGroupAction"/>
+    </android.support.v7.widget.Toolbar>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/userList"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:cacheColorHint="#00000000"
+        android:divider="#CCCCCC"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>

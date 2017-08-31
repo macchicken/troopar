@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.troopar.trooparapp.activity.DisplayRecentActivitiesActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_displayActToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/appMainColor">
+        <TextView
+            android:id="@+id/toolbar_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:text="Nearby User"
+            android:textColor="@color/whiteColor"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical|center_horizontal"/>
+    </android.support.v7.widget.Toolbar>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/displayActRefreshable_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/my_displayActToolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/appPageBackground">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="438dp"
+            android:id="@+id/displayActlistView"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.07">
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

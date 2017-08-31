@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/logo_128px_rate0" android:state_pressed="true"/>
+    <!-- pressed -->
+    <item android:drawable="@drawable/logo_128px_rate1" android:state_selected="true"/>
+    <!-- focused -->
+    <item android:drawable="@drawable/logo_128px_rate0"/>
+    <!-- default -->
+
+</selector>

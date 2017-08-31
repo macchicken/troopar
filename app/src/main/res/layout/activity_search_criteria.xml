@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appMainColor"
+    tools:context="com.troopar.trooparapp.activity.SearchCriteriaActivity">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/back_icon"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick="backPressAction"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/search_field"
+        android:background="@drawable/rounded_shape"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_toStartOf="@+id/search_text"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:tint="#999999"
+            android:src="@drawable/logo_128px_search"
+            android:contentDescription="search icon" />
+        <EditText
+            android:id="@+id/search_text"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:hint="Search"
+            android:textSize="14sp"
+            android:textColor="@color/appTextColor"
+            android:textColorHint="@color/appTextColor"
+            android:background="#00000000"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:layout_marginStart="@dimen/recyclerView_item_space"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/searchWithLocation_field"
+        android:layout_below="@+id/search_field"
+        android:background="@drawable/rounded_shape"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="5dp">
+        <ImageView
+            android:id="@+id/searchWithLocation_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_toStartOf="@+id/searchWithLocation_text"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:tint="#999999"
+            android:src="@drawable/logo_128px_search"
+            android:contentDescription="search with location icon" />
+        <EditText
+            android:id="@+id/searchWithLocation_text"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:textSize="14sp"
+            android:textColor="@color/appTextColor"
+            android:textColorHint="@color/appTextColor"
+            android:background="#00000000"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:layout_marginStart="@dimen/recyclerView_item_space"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sort by:"
+        android:textSize="20sp"
+        android:textColor="@color/appTextColor"
+        android:layout_below="@+id/searchWithLocation_field"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="20sp"
+        android:textColor="@color/appTextColor"
+        android:layout_alignTop="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/sortByKey" />
+
+    <Spinner android:id="@+id/sortByKeySelector"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sortByKey"
+        android:layout_alignStart="@+id/sortByKey" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/categories"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/sortByKeySelector"
+        android:layout_marginStart="85dp"
+        android:layout_alignEnd="@+id/sortByKeySelector"
+        android:divider="@null"
+        android:dividerHeight="0dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/recyclerView_item_space"
+    android:weightSum="1.0">
+
+    <com.meg7.widget.CircleImageView
+        android:id="@+id/iv_userhead"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:layout_weight="0.02"/>
+
+    <TextView
+        android:id="@+id/tv_username"
+        style="@style/user_text_name_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="Linda Gao"
+        android:gravity="start"
+        android:layout_gravity="center"
+        android:layout_weight="0.93"/>
+    <CheckBox
+        android:id="@+id/checkUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.05"
+        android:theme="@style/MyCheckBox"
+        android:onClick="selectUserAction"/>
+
+</LinearLayout>

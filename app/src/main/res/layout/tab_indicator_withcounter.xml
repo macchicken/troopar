@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dip"
+    android:layout_height="40dip"
+    android:layout_weight="1"
+    android:background="@drawable/tab_indicator">
+
+    <RelativeLayout
+        android:id="@+id/tabIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/chat_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+        <ImageView
+            android:id="@+id/tabBtnOver"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+        <TextView
+            android:id="@+id/unreadMessageCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:singleLine="true"
+            android:textColor="@color/appTextColor"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:background="@drawable/badge_circle"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <!--android:layout_above="@+id/tabTitle"-->
+    <!--<TextView android:id="@+id/tabTitle" -->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true" -->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:singleLine="true"-->
+        <!--style="?android:attr/tabWidgetStyle" />-->
+</RelativeLayout>

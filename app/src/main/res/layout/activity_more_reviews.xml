@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appPageBackground"
+    android:orientation="vertical"
+    tools:context="com.troopar.trooparapp.activity.MoreReviewsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@null">
+        <RelativeLayout android:id="@+id/toolbar_logo"
+            android:layout_width="110dp" android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/troopar_logo_white"
+            android:layout_gravity="center_vertical|center_horizontal">
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/dash_line"
+        android:layerType="software"
+        android:layout_marginBottom="10sp"/>
+    <com.troopar.trooparapp.myview.PaginationReviewsListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reviewListview"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:dividerHeight="10sp"/>
+
+</LinearLayout>

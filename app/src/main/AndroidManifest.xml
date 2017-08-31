@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.troopar.trooparapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!--
+    The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+            Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".TrooparApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_256x256px"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".activity.StartActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainTabActivity"
+            android:label="@string/title_activity_main_tab"
+            android:screenOrientation="nosensor"
+            android:theme="@style/maintab_theme">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.NearbyActivity"
+            android:label="@string/title_activity_nearby"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:theme="@style/NearbyTheme" />
+        <activity
+            android:name=".activity.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:theme="@style/SearchTheme" />
+        <activity
+            android:name=".activity.MyActivity"
+            android:label="@string/title_activity_my"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:theme="@style/MyActTheme" />
+        <activity
+            android:name=".activity.MoreActivity"
+            android:label="@string/title_activity_more"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:theme="@style/MyMoreTheme" />
+        <activity
+            android:name=".activity.EventDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/EventDetailTheme" />
+        <activity
+            android:name=".activity.MoreReviewsActivity"
+            android:label="@string/title_activity_more_reviews"
+            android:parentActivityName=".activity.EventDetailActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/MoreReviewTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.troopar.trooparapp.activity.EventDetailActivity" />
+        </activity>
+        <activity
+            android:name=".activity.WriteReviewActivity"
+            android:label="@string/title_activity_write_review"
+            android:parentActivityName=".activity.EventDetailActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/EventDetailTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.troopar.trooparapp.activity.EventDetailActivity" />
+        </activity>
+        <activity
+            android:name=".activity.MyEventMapoActivity"
+            android:label="@string/my_location_demo_label"
+            android:parentActivityName=".activity.NearbyActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/FindMapEventTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.troopar.trooparapp.activity.NearbyActivity" />
+        </activity>
+        <activity
+            android:name=".activity.UsersRegActivity"
+            android:label="@string/title_activity_users_reg"
+            android:parentActivityName=".activity.MoreActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/NewUserTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.troopar.trooparapp.activity.MoreActivity" />
+        </activity>
+        <activity
+            android:name=".activity.MyFindMapEventActivity"
+            android:label="@string/title_activity_my_find_map_event"
+            android:screenOrientation="nosensor"
+            android:theme="@style/FindMapEventsTheme" />
+        <activity
+            android:name=".activity.OriginalImageActivity"
+            android:label="@string/title_activity_original_image"
+            android:screenOrientation="nosensor"
+            android:theme="@style/EventDetailTheme" />
+        <activity
+            android:name=".activity.EventPhotosActivity"
+            android:label="@string/title_activity_event_photos"
+            android:screenOrientation="nosensor"
+            android:theme="@style/EventPhotosTheme" />
+        <activity
+            android:name=".activity.TroopActivity"
+            android:label="@string/title_activity_troop"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".activity.TrooparEventActivity"
+            android:label="@string/title_activity_troopar_event"
+            android:screenOrientation="nosensor"
+            android:theme="@style/TrooparTheme" />
+        <activity
+            android:name=".activity.UserProfileActivity"
+            android:label="@string/title_activity_user_profile"
+            android:screenOrientation="nosensor"
+            android:theme="@style/TrooparTheme" />
+        <activity
+            android:name=".activity.MessageBoxActivity"
+            android:label="@string/title_activity_message_box"
+            android:screenOrientation="nosensor"
+            android:theme="@style/MessageBoxTheme"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".activity.SearchCriteriaActivity"
+            android:label="@string/title_activity_search_criteria"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".activity.DisplayUsersActivity"
+            android:label="@string/title_activity_display_users"
+            android:screenOrientation="nosensor"
+            android:theme="@style/MessageBoxTheme" />
+        <activity
+            android:name=".activity.ShareEventActivity"
+            android:label="@string/title_activity_share_event"
+            android:screenOrientation="nosensor"
+            android:theme="@style/TrooparTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.ShowBigImageActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".activity.RecordMovieActivity" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/facebook_app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider294789927521049"
+            android:exported="true" />
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.troopar.trooparapp.activity" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".activity.service.TrooparGcmListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".activity.UserDetailActivity"
+            android:label="UserDetailActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/MyMoreTheme" />
+        <activity
+            android:name=".activity.DisplayActivitiesActivity"
+            android:label="@string/title_activity_display_activities"
+            android:screenOrientation="nosensor"
+            android:theme="@style/MyActTheme" />
+        <activity
+            android:name=".activity.DisplayNearbyUsersActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/MessageBoxTheme" />
+        <activity
+            android:name=".activity.CreateGroupActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/MessageBoxTheme" />
+        <activity
+            android:name=".activity.GroupChatInfoActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/MessageBoxTheme" />
+        <activity
+            android:name=".activity.EditGroupProfileActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/MessageBoxTheme" />
+        <activity
+            android:name=".activity.DisplayRecentActivitiesActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/MyActTheme" />
+        <activity
+            android:name=".activity.CommentsActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/MessageBoxTheme" />
+
+        <service
+            android:name=".activity.service.RetrieveReviewsService"
+            android:exported="false" />
+        <service
+            android:name=".activity.service.UploadPhotosService"
+            android:exported="false" />
+
+        <activity
+            android:name=".activity.PostCommentActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/MessageBoxTheme" />
+
+        <service
+            android:name=".activity.service.LikeActivityIntentService"
+            android:exported="false" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="12e355bbd743373c2d708dfa44001a48ca4cf3c4" />
+
+        <activity
+            android:name=".activity.AdminMessagesActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/MessageBoxTheme" />
+        <activity android:name=".activity.PostActivityActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/MessageBoxTheme"/>
+    </application>
+
+</manifest>

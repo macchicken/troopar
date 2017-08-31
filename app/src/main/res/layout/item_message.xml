@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.makeramen.roundedimageview.RoundedImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/userImage"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="7dp"
+        app:riv_border_width="5dp"
+        app:riv_mutate_background="true"
+        app:riv_border_color="@color/whiteColor"
+        app:riv_oval="false"/>
+    <TextView
+        android:id="@+id/messagePoster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="Content"
+        android:textColor="@color/appTextColor"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_toEndOf="@+id/userImage"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/messageContent"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="Let’s play play play play"
+        android:textColor="@color/appTextColor"
+        android:textSize="15sp"
+        android:layout_toEndOf="@+id/userImage"
+        android:layout_below="@+id/messagePoster"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/massagePostTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="Time"
+        android:textColor="@color/appTextColor"
+        android:alpha="0.4"
+        android:textSize="12sp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>

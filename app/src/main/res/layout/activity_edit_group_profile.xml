@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whiteColor"
+    tools:context="com.troopar.trooparapp.activity.EditGroupProfileActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/nearby_actionbar_bg"
+        android:theme="@style/MessageBoxTheme">
+        <TextView
+            android:id="@+id/displayTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/appTextColor"
+            android:text="Group Profile"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/okBtn"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:text="OK"
+            android:textColor="@color/blackColor"
+            android:background="@drawable/buttonshape_thin_red"
+            android:layout_gravity="end"
+            android:gravity="center"
+            android:layout_marginEnd="5dip"
+            android:onClick="saveAction"/>
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/appTextColor"
+        android:text="Group Name"
+        android:layout_marginTop="20dip"
+        android:layout_marginStart="20dip"
+        android:gravity="start"
+        android:textSize="15sp"/>
+    <EditText
+        android:inputType="text"
+        android:id="@+id/groupName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dip"
+        android:layout_marginEnd="20dip"
+        android:textSize="15sp"
+        android:background="@null"
+        android:textColor="@color/blackColor"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/appTextColor"
+        android:layout_marginStart="20dip"
+        android:layout_marginEnd="20dip"/>
+</LinearLayout>

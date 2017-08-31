@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_review_shape">
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/recyclerView_item_space"
+        android:layout_marginLeft="@dimen/recyclerView_item_space"
+        android:layout_marginRight="@dimen/recyclerView_item_space"
+        android:layout_marginBottom="@dimen/recyclerView_item_space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/userImage"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="7dp"
+            app:riv_border_width="5dp"
+            app:riv_mutate_background="true"
+            app:riv_border_color="@color/whiteColor"
+            app:riv_oval="false" />
+        <TextView
+            android:id="@+id/eventReviewPoster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Content"
+            android:textColor="@color/appTextColor"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/recyclerView_item_space"
+            android:layout_toEndOf="@+id/userImage" />
+        <TextView
+            android:id="@+id/eventReviewPostTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Time"
+            android:textColor="@color/appTextColor"
+            android:alpha="0.4"
+            android:textSize="15sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/spaceLineColor" />
+    <TextView
+        android:layout_marginTop="@dimen/recyclerView_item_space"
+        android:layout_marginBottom="@dimen/recyclerView_item_space"
+        android:id="@+id/eventReviewContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:text="Content"
+        android:textColor="@color/appTextColor"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+</LinearLayout>

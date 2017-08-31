@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/appMainColor"
+    tools:context="com.troopar.trooparapp.activity.UsersRegActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_newuser_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@null">
+        <RelativeLayout android:id="@+id/toolbar_logo"
+            android:layout_width="110dp" android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/troopar_logo_white"
+            android:layout_gravity="center_vertical|center_horizontal">
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:weightSum="1.0">
+        <RelativeLayout
+            android:layout_weight="0.1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_oval_white_with_gradient">
+            <com.meg7.widget.CircleImageView
+                android:layout_width="100dip"
+                android:layout_height="100dip"
+                android:layout_centerInParent="true"
+                android:src="@drawable/plus_icon_black"
+                android:id="@+id/userImage"
+                android:onClick="captureUserImage" />
+        </RelativeLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <TextView
+            android:layout_weight="0.1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Add Photo"
+            android:textColor="@color/whiteColor"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <RelativeLayout
+            android:layout_weight="0.1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/rounded_shape">
+            <EditText
+                android:id="@+id/userNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="User Name"
+                android:textSize="20sp"
+                android:textColor="@color/appTextColor"
+                android:textColorHint="@color/appTextColor"
+                android:background="#00000000"
+                android:padding="15dp"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <RelativeLayout
+            android:layout_weight="0.1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/rounded_shape">
+            <EditText
+                android:id="@+id/userPasswordInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:textSize="20sp"
+                android:textColor="@color/appTextColor"
+                android:textColorHint="@color/appTextColor"
+                android:inputType="textPassword"
+                android:background="#00000000"
+                android:padding="15dp"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <RelativeLayout
+            android:layout_weight="0.1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/rounded_shape">
+            <EditText
+                android:id="@+id/userRetypePasswordInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Re-enter Password"
+                android:textSize="20sp"
+                android:textColor="@color/appTextColor"
+                android:textColorHint="@color/appTextColor"
+                android:inputType="textPassword"
+                android:background="#00000000"
+                android:singleLine="true"
+                android:padding="15dp"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <RelativeLayout
+            android:layout_weight="0.1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/rounded_shape">
+            <EditText
+                android:id="@+id/emailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textSize="20sp"
+                android:textColor="@color/appTextColor"
+                android:textColorHint="@color/appTextColor"
+                android:background="#00000000"
+                android:singleLine="true"
+                android:padding="15dp"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <RelativeLayout
+            android:layout_weight="0.1"
+            android:layout_width="120dp"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_rect_with_large_gradient"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SIGN UP"
+                android:textSize="20sp"
+                android:textColor="@color/appTextColor"
+                android:onClick="submitNewUserInfo"
+                android:padding="10dp"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.troopar.trooparapp.activity.NearbyActivity">
+
+    <item
+        android:id="@+id/action_troop"
+        android:orderInCategory="103"
+        android:title="Troop Event"
+        app:showAsAction="collapseActionView"/>
+
+    <!--<item-->
+        <!--android:id="@+id/action_friends"-->
+        <!--android:orderInCategory="103"-->
+        <!--android:title="Friends"-->
+        <!--app:showAsAction="collapseActionView"/>-->
+
+    <!--<item-->
+        <!--android:id="@+id/action_trooped"-->
+        <!--android:orderInCategory="104"-->
+        <!--android:title="Trooped"-->
+        <!--app:showAsAction="collapseActionView"/>-->
+
+    <!--<item-->
+        <!--android:id="@+id/action_joined"-->
+        <!--android:orderInCategory="105"-->
+        <!--android:title="Joined"-->
+        <!--app:showAsAction="collapseActionView"/>-->
+
+    <!--<item-->
+        <!--android:id="@+id/action_Shared"-->
+        <!--android:orderInCategory="106"-->
+        <!--android:title="Shared"-->
+        <!--app:showAsAction="collapseActionView"/>-->
+
+</menu>

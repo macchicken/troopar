@@ -1,0 +1,188 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="custom_ratingbar_style" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/custom_ratingbar_progress</item>
+        <item name="android:minHeight">65dp</item>
+        <item name="android:maxHeight">65dp</item>
+        <item name="android:stepSize">0.5</item>
+    </style>
+
+    <!-- style the overflow menu -->
+    <style name="MyOverflowMenuButton" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/plus_icon</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:paddingTop">13dp</item>
+        <item name="android:paddingBottom">13dp</item>
+        <item name="android:tint">@color/whiteColor</item>
+    </style>
+    <style name="MoreOverflowMenuButton" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/setting_icon</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:paddingTop">13dp</item>
+        <item name="android:paddingBottom">13dp</item>
+        <item name="android:tint">@color/whiteColor</item>
+    </style>
+    <!-- OverFlow menu Styles -->
+    <style name="PopupMenuListView" parent="@style/Widget.AppCompat.Light.ListView.DropDown">
+        <item name="android:divider">@color/appTextColor</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:background">@color/whiteColor</item>
+    </style>
+
+    <style name="maintab_theme" parent="Theme.AppCompat.NoActionBar">
+        <item name="actionOverflowButtonStyle">@style/MyOverflowMenuButton</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyOverflowMenuButton</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:dropDownListViewStyle">@style/PopupMenuListView</item>
+        <item name="dropDownListViewStyle">@style/PopupMenuListView</item>
+        <item name="android:textColor">@color/appTextColor</item>
+    </style>
+
+    <style name="EventDetailTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="actionOverflowButtonStyle">@style/MyOverflowMenuButton</item>
+        <item name="titleTextColor">@color/whiteColor</item>
+    </style>
+
+    <style name="NearbyTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="actionOverflowButtonStyle">@style/MyOverflowMenuButton</item>
+    </style>
+
+    <style name="NearbyToolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="SearchTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="actionOverflowButtonStyle">@style/MyOverflowMenuButton</item>
+        <item name="titleTextColor">@color/whiteColor</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="MyActTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="actionOverflowButtonStyle">@style/MyOverflowMenuButton</item>
+        <item name="titleTextColor">@color/whiteColor</item>
+    </style>
+
+    <style name="NewUserTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="actionOverflowButtonStyle">@style/MyOverflowMenuButton</item>
+        <item name="titleTextColor">@color/whiteColor</item>
+    </style>
+
+    <style name="MyMoreTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="actionOverflowButtonStyle">@style/MoreOverflowMenuButton</item>
+        <item name="android:actionOverflowButtonStyle">@style/MoreOverflowMenuButton</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:dropDownListViewStyle">@style/PopupMenuListView</item>
+        <item name="dropDownListViewStyle">@style/PopupMenuListView</item>
+        <item name="android:textColor">@color/appTextColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="EventPhotosTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="actionOverflowButtonStyle">@style/MyOverflowMenuButton</item>
+        <item name="titleTextColor">@color/whiteColor</item>
+    </style>
+
+    <style name="FindMapEventTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="titleTextColor">@color/whiteColor</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="FindMapEventsTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="actionOverflowButtonStyle">@style/MyOverflowMenuButton</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyOverflowMenuButton</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:dropDownListViewStyle">@style/PopupMenuListView</item>
+        <item name="dropDownListViewStyle">@style/PopupMenuListView</item>
+        <item name="android:textColor">@color/appTextColor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="MoreReviewTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="actionOverflowButtonStyle">@style/MyOverflowMenuButton</item>
+        <item name="titleTextColor">@color/whiteColor</item>
+    </style>
+
+    <style name="TrooparTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="titleTextColor">@color/whiteColor</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="MessageBoxTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="actionOverflowButtonStyle">@style/MoreOverflowMenuButton</item>
+        <item name="android:actionOverflowButtonStyle">@style/MoreOverflowMenuButton</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:dropDownListViewStyle">@style/PopupMenuListView</item>
+        <item name="dropDownListViewStyle">@style/PopupMenuListView</item>
+        <item name="android:textColor">@color/appColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="chat_text_date_style">
+        <item name="android:padding">2dp</item>
+        <item name="android:textColor">@color/appTextColor</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="chat_text_name_style">
+        <item name="android:textColor">@color/appTextColor</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="user_text_name_style">
+        <item name="android:textColor">@color/appTextColor</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="amu_Bubble.TextAppearance.Dark" parent="android:TextAppearance.Medium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#ff7f7f7f</item>
+    </style>
+    <style name="amu_Bubble.TextAppearance.Light" parent="amu_Bubble.TextAppearance.Dark">
+        <item name="android:textColor">#ffeeeeee</item>
+    </style>
+    <style name="amu_ClusterIcon.TextAppearance" parent="android:TextAppearance">
+        <item name="android:textColor">#ffeeeeee</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+    <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <style name="MyCheckBox" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorControlNormal">#818181</item>   <!-- normal border color change as you wish -->
+    </style>
+
+</resources>

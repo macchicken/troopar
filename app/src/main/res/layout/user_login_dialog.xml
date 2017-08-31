@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/userLoginEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/appTextColor"
+        android:hint="email@email.com"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"/>
+    <EditText
+        android:id="@+id/userLoginPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/appTextColor"
+        android:hint="password"
+        android:textSize="20sp"
+        android:inputType="textPassword"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/dialogButtonCancel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textSize="20sp"
+            android:layout_alignParentStart="true" />
+        <Button
+            android:id="@+id/dialogButtonOK"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Ok"
+            android:textSize="20sp"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+</LinearLayout>

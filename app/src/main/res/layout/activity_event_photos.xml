@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/appPageBackground">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/appMainColor">
+        <RelativeLayout android:id="@+id/toolbar_logo"
+            android:layout_width="110dp" android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/troopar_logo_white"
+            android:layout_gravity="center_vertical|center_horizontal">
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <GridView
+        android:layout_marginTop="2dp"
+        android:id="@+id/photo_wall"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="90dip"
+        android:stretchMode="columnWidth"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="10dip"
+        android:gravity="center"/>
+
+</LinearLayout>  

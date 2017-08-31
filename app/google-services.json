@@ -1,0 +1,113 @@
+{
+  "project_info": {
+    "project_number": "587434854517",
+    "project_id": "troopar-1310"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587434854517:android:636294f949ce97b8",
+        "android_client_info": {
+          "package_name": "com.troopar.trooparapp.activity"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgT7s2OrpoTjep6aJJP2URVfdhcmRaHbY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587434854517:android:d5fb12d9ea8cc1ec",
+        "android_client_info": {
+          "package_name": "com.google.android.c2dm.intent.RECEIVE"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgT7s2OrpoTjep6aJJP2URVfdhcmRaHbY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587434854517:android:e85b80618bc012f1",
+        "android_client_info": {
+          "package_name": "com.troopar.trooparapp.activity.service"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgT7s2OrpoTjep6aJJP2URVfdhcmRaHbY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587434854517:android:9f6bda9180ec6f11",
+        "android_client_info": {
+          "package_name": "com.troopar.trooparapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgT7s2OrpoTjep6aJJP2URVfdhcmRaHbY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

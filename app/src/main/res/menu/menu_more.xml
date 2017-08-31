@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.troopar.trooparapp.activity.MoreActivity">
+
+    <item
+        android:id="@+id/action_userprofile"
+        android:orderInCategory="102"
+        android:title="Profile"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="103"
+        android:title="Log out"
+        app:showAsAction="collapseActionView" />
+</menu>

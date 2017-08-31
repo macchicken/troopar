@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:weightSum="1.0"
+    android:layout_marginBottom="1dp"
+    android:background="@color/whiteColor">
+    <TextView
+        android:id="@+id/commentsCount"
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comments 6"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/appTextColor"/>
+    <TextView
+        android:id="@+id/likeCount"
+        android:layout_weight="0.3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Likes 2"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:alpha="0.5"/>
+</LinearLayout>

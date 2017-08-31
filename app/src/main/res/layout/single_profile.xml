@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="@dimen/custom_profile_image"
+             android:layout_height="@dimen/custom_profile_image" android:layout_centerInParent="true" android:layout_centerVertical="true" android:layout_centerHorizontal="true">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/singleImage"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="5dp"
+            app:riv_mutate_background="true"
+            app:riv_oval="false"/>
+    <TextView
+        android:id="@+id/amu_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/amu_Bubble.TextAppearance.Light"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:layout_centerInParent="true"
+        android:alpha=".8"/>
+</RelativeLayout>

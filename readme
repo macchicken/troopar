@@ -1,0 +1,38 @@
+layout structure for different resolution
+layout-large-mdpi   (1024x600)
+layout-large-tvdpi  (800x1280)
+layout-large-xhdpi  (1200x1920)
+layout-xlarge-mdpi  (1280x800)
+layout-xlarge-xhdpi (2560x1600)
+layout-640x360
+layout-800x480
+
+drawable related structure
+res/drawable        (default)
+res/drawable-ldpi/  (240x320 and nearer resolution)
+res/drawable-mdpi/  (320x480 and nearer resolution)
+res/drawable-hdpi/  (480x800, 540x960 and nearer resolution)
+res/drawable-xhdpi/  (720x1280 - Samsung S3, Micromax Canvas HD etc)
+res/drawable-xxhdpi/ (1080x1920 - Samsung S4, HTC one, Nexus 5, etc)
+
+dimension related structure
+res/values/dimens.xml(default)
+res/values-ldpi/dimens.xml   (240x320 and nearer resolution)
+res/values-mdpi/dimens.xml   (320x480 and nearer resolution)
+res/values-hdpi/dimens.xml   (480x800, 540x960 and nearer resolution)
+res/values-xhdpi/dimens.xml  (720x1280 - Samsung S3, Micromax Canvas HD, etc) 
+res/values-xxhdpi/dimens.xml (1080x1920 - Samsung S4, HTC one, etc)
+res/values-large/dimens.xml  (480x800)
+
+res/values-large-mdpi/dimens.xml (600x1024)
+res/values-sw600dp/dimens.xml  (600x1024)
+res/values-sw720dp/dimens.xml  (800x1280)
+res/values-xlarge-xhdpi/dimens.xml (2560x1600 - Nexus 10")
+res/values-large-xhdpi/dimens.xml  (1200x1920 - Nexus 7"(latest))
+
+
+density
+ldpi120dpi  0.75
+mdpi160dpi  1
+hdpi240dpi  1.5
+xhdpi   320dpi  2

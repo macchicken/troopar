@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/recyclerView_item_space"
+    android:background="@color/whiteColor">
+
+    <TextView
+        android:id="@+id/moreDataText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="no more"
+        android:textColor="@color/appTextColor"
+        android:textSize="15sp"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="loadMore"/>
+</RelativeLayout>

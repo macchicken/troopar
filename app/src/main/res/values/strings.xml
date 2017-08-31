@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">troopar</string>
+    <string name="footerWords">©Copyright by Troopar.All rights reserved.</string>
+    <string name="facebook_app_name">troopar</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">Main</string>
+    <string name="title_activity_nearby">What\'s on now</string>
+    <string name="title_activity_search">Search Activities</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_my">My Activity</string>
+    <string name="title_activity_more">More</string>
+    <string name="title_activity_event_detail">Event Detail</string>
+    <string name="my_location_demo_label">Nearby events</string>
+    <string name="title_activity_users_reg">New User</string>
+    <string name="title_activity_my_find_map_event">Events</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_original_image">Image</string>
+    <string name="title_activity_main_tab">Main page</string>
+    <string name="title_activity_event_photos">Event Photos</string>
+    <string name="title_activity_more_reviews">Reviews</string>
+    <string name="title_activity_write_review">Write Review</string>
+
+    <string name="pull_to_refresh">pull to refresh</string>
+    <string name="release_to_refresh">release to refresh</string>
+    <string name="refreshing">refreshing…</string>
+    <string name="not_updated_yet">not updated_yet</string>
+    <string name="updated_at">updated %1$s ago</string>
+    <string name="updated_just_now">updated just now</string>
+    <string name="time_error">time error</string>
+    <string name="empty_string"></string>
+    <string name="google_maps_key">AIzaSyC2lzXaakbTMOJVNDAHioA6pbXAvLPkGuQ</string>
+
+    <string name="location_permission_denied">This sample requires location permission to enable the \'my location\' layer. Please try again and grant access to use the location.\nIf the permission has been permanently denied, it can be enabled from the System Settings &gt; Apps &gt; \'Google Maps API Demos\'.</string>
+    <string name="permission_required_toast">Location permission is required for this demo.</string>
+    <string name="permission_rationale_location">Access to the location service is required to demonstrate the \'my location\' feature, which shows your current location on the map.</string>
+    <string name="title_activity_troop">TroopActivity</string>
+    <string name="title_activity_troopar_event">TrooparEventActivity</string>
+    <string name="title_activity_user_profile">UserProfileActivity</string>
+    <string name="title_activity_message_box">MessageBoxActivity</string>
+    <string name="title_activity_search_criteria">SearchCriteriaActivity</string>
+    <string name="title_activity_display_users">DisplayUsersActivity</string>
+    <string name="title_activity_share_event">ShareEventActivity</string>
+
+    <string name="default_distance">0.05km</string>
+    <string name="facebook_app_id">842293052566479</string>
+    <string name="title_activity_display_activities">DisplayActivitiesActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="profileEditPageHeaderOne">Welcome to Troopar! Complete your profile</string>
+    <string name="profileEditPageHeaderTwo">to help us know your interests and how to refer you.</string>
+
+    <string name="collapse">Collapse</string>
+    <string name="fullText">Read more</string>
+    <string name="quit">QUIT</string>
+    <string name="join">JOIN</string>
+    <string name="entryFee">Entry fee</string>
+    <string name="maximumPeople">Maximum people</string>
+    <string name="unFollow"> UnFollow</string>
+    <string name="follow"> Follow</string>
+    <string name="uploadPhotos">upload photos:</string>
+    <string name="uploadAPhoto">upload a photo:</string>
+    <string name="typePost">Post:</string>
+    <string name="typeReview">Review:</string>
+    <string name="typeTrooped">Trooped:</string>
+    <string name="typePhoto">Photo:</string>
+    <string name="typeShare">Share:</string>
+    <string name="typeJoin">Join:</string>
+    <string name="typeEvent">Event:</string>
+    <string name="logout">Logout</string>
+    <string name="pleaseLogin">Please login</string>
+    <string name="login">Login</string>
+    <string name="likeCount">%d</string>
+    <string name="activitiesTitle">%s\'s Activities</string>
+    <string name="okCount">OK (%d)</string>
+    <string name="ok">OK</string>
+    <string name="chatInfo">Chat Info(%d)</string>
+    <string name="commentsCounts">Comments %s</string>
+    <string name="likeCounts">Likes %s</string>
+    <string name="followersCount">%s Followers</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

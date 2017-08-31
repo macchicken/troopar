@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.troopar.trooparapp.activity.OriginalImageActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/nearby_actionbar_bg"
+        android:layout_centerHorizontal="true">
+        <RelativeLayout android:id="@+id/toolbar_logo"
+            android:layout_width="110dp" android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/troopar_logo_white"
+            android:layout_gravity="center_vertical|center_horizontal">
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/likeCount"
+        android:layout_alignBottom="@+id/likeBtn"
+        android:layout_toStartOf="@+id/likeBtn"
+        android:layout_alignTop="@+id/likeBtn" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/centre_icon"
+        android:layout_below="@+id/my_toolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="43dp"
+        android:id="@+id/likeBtn"
+        android:onClick="likePhotoAction"/>
+    <com.troopar.trooparapp.myview.PhotoView
+        android:layout_below="@+id/likeBtn"
+        android:id="@+id/originalImageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

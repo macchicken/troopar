@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tabPageBackground">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_myacttoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/appTextColor">
+        <RelativeLayout
+            android:id="@+id/toolbar_logo"
+            android:layout_width="110dp" android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/troopar_logo_white"
+            android:layout_gravity="center_vertical|center_horizontal">
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <ImageView
+        android:contentDescription="network error pciture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:onClick="retryCheckNetwork"
+        android:id="@+id/network_error_ic"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/myactrefreshable_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/my_myacttoolbar"
+        android:layout_alignParentStart="true">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="438dp"
+            android:id="@+id/myactlistView"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.07">
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

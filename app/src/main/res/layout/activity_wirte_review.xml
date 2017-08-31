@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appPageBackground"
+    android:orientation="vertical"
+    tools:context="com.troopar.trooparapp.activity.WriteReviewActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/nearby_actionbar_bg"
+        android:orientation="horizontal">
+        <RelativeLayout android:id="@+id/toolbar_logo"
+            android:layout_width="110dp" android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/troopar_logo_white"
+            android:layout_gravity="center_horizontal|center_vertical">
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/reviewInputDialog"
+        android:layout_margin="@dimen/view_item_margin"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="Write your comment here"
+        android:textColorHint="@color/appTextColor"
+        android:textColor="@color/appTextColor"
+        android:gravity="start"
+        android:padding="5dp"
+        android:textSize="15sp"
+        android:background="@color/whiteColor" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/view_item_margin"
+        android:layout_marginStart="@dimen/view_item_margin"
+        android:layout_marginRight="@dimen/view_item_margin"
+        android:layout_marginEnd="@dimen/view_item_margin"
+        android:layout_marginBottom="@dimen/view_item_margin">
+
+        <RelativeLayout
+            android:id="@+id/eventImageContainer"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:padding="2dp">
+            <com.makeramen.roundedimageview.RoundedImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/eventImageView"
+                android:layout_width="93dp"
+                android:layout_height="93dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius="7dp"
+                app:riv_mutate_background="true"
+                app:riv_oval="false" />
+            <ImageView
+                android:id="@+id/eventCategoryText"
+                android:layout_width="28dp"
+                android:layout_height="24dp"
+                android:src="@drawable/event_category_icon"
+                android:background="@drawable/bg_rect_with_gradient"
+                android:layout_alignParentTop="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="95dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="4dp">
+            <TextView
+                android:id="@+id/eventTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="event title"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:textColor="@color/appTextColor"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/recyclerView_item_space"/>
+
+            <RelativeLayout
+                android:id="@+id/eventSnippetContainer"
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginBottom="3dp">
+                <ImageView
+                    android:id="@+id/logo_date"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:tint="@color/appMainColor"
+                    android:src="@drawable/logo_128px_date"/>
+                <TextView
+                    android:id="@+id/eventSnippet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="event snippet"
+                    android:textSize="13sp"
+                    android:singleLine="true"
+                    android:textColor="@color/appTextColor"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/logo_date"
+                    android:layout_alignBaseline="@+id/logo_date" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:id="@+id/relativeLayout"
+                android:layout_marginBottom="3dp">
+                <ImageView
+                    android:id="@+id/logo_place"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:tint="@color/appMainColor"
+                    android:src="@drawable/logo_128px_place"/>
+                <TextView
+                    android:id="@+id/eventSnippet2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="event snippet"
+                    android:singleLine="true"
+                    android:textSize="13sp"
+                    android:textColor="@color/appTextColor"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/logo_place"
+                    android:layout_alignBaseline="@+id/logo_place" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:id="@+id/tvEventCategoryContainer"
+                android:layout_marginBottom="3dp">
+                <ImageView
+                    android:id="@+id/event_category_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:tint="@color/appMainColor"
+                    android:src="@drawable/logo_128px_category"/>
+                <TextView
+                    android:id="@+id/eventCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:singleLine="true"
+                    android:text=" Festival, Show"
+                    android:textColor="@color/appTextColor"
+                    android:textSize="13sp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/event_category_icon"
+                    android:layout_alignBaseline="@+id/event_category_icon" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
